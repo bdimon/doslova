@@ -1,0 +1,2 @@
+<p>
+<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><br />\n<ins class=\"adsbygoogle\" style=\"display: block; text-align: center;\" data-ad-format=\"fluid\" data-ad-layout=\"in-article\" data-ad-client=\"ca-pub-2583303161803589\" data-ad-slot=\"1133947842\"></ins><br />\n<script>\n     (adsbygoogle = window.adsbygoogle || []).push({});\n</script></p>
