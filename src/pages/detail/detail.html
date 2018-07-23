@@ -3,8 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <!-- <ion-title text-center padding [innerHTML]= "post.title.rendered"></ion-title> -->
-  </ion-navbar>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
@@ -28,16 +27,6 @@
     <div padding [innerHTML]= "post.content.rendered"></div>
   </div>
   
-  <!-- <ion-row>
-    <ion-label text-right>Sort</ion-label>
-    <ion-select [(ngModel)]="sort" (ionChange)="changeSort()">
-      <ion-option value="0">New to old</ion-option>
-      <ion-option value="1">Old to new</ion-option>
-    </ion-select>
-  </ion-row> -->
-  <!-- <ion-refresher ion-item (ionRefresh)="api.getMoreComments($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher> -->
   <div *ngIf ="this.comments">
     <ion-item-divider>Comments</ion-item-divider>
     <ion-list text-wrap *ngFor="let comment of comments">
@@ -55,9 +44,7 @@
   </ion-infinite-scroll>
 </div>
   </ion-content>
-    <!-- <ion-spinner></ion-spinner> -->
-  
-  <!-- <button *ngIf="showMore" ion-button full (click)="getHeaders()">Load more...</button> -->
+    
     
   
    

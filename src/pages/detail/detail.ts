@@ -19,7 +19,7 @@ export class DetailPage {
   public items: any =[];
   public post: any = [];
   public commentsCount: number;
-  private isLoading: boolean=false;
+  public isLoading: boolean=false;
   public comments: any=[];
   public page:number = 1;
   // private sort:string='1';
@@ -27,7 +27,6 @@ export class DetailPage {
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public api: ApiProvider) {
     this.post = navParams.get('post');
-    // this.getStatus();
     }
     
   ionViewDidLoad() {
@@ -35,25 +34,6 @@ export class DetailPage {
     this.getComments();
     }
 
-  //  changeSort() {
-  //   console.log(this.sort);
-  //     this.comments=[];
-  //     this.page=1;
-  //     this.getComments();
-  //   }
-
-  //   getStatus() {
-  //     let url:string='comments?_envelope&post=' + this.post.id;
-  //     console.log(this.post.id);
-  //     this.api.get(url).subscribe((resp:any) => {
-  //     if (resp.status==200) {
-        
-  //       console.log(resp.headers['X-WP-Total']);
-  //       console.log(resp.headers['X-WP-TotalPages']);
-  //       this.commentsCount = resp.headers['X-WP-Total'];
-  //     }
-  //   });
-  // }
 
    getComments(infiniteScroll=null) {
     this.showMore = true;
@@ -65,14 +45,6 @@ export class DetailPage {
       this.isLoading = false;
       this.comments = this.comments.concat(resp);
       this.page++;
-      // if (this.comments.length == this.commentsCount){
-      //       this.showMore = false;
-            
-      //       return ;            
-      //       }
-      //       else {
-      //       this.showMore = true;
-      //     }
           if (infiniteScroll!=null){
             infiniteScroll.complete();
              this.isLoading = true;
@@ -80,7 +52,6 @@ export class DetailPage {
       
     }, (error) => {
       this.isLoading = false;
-      // this.showMore = false;
       console.log('error');
     });
   }
