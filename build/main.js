@@ -516,7 +516,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ApiProvider = /** @class */ (function () {
     function ApiProvider(http) {
         this.http = http;
-        this.API_URL = 'http://doslova.com/wp-json/wp/v2/';
+        this.API_URL = 'https://petrimazepa.com/wp-json/wp/v2/';
         this.Categories = [];
         this.comments = [];
         this.post = [];
