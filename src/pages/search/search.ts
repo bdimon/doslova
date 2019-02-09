@@ -19,7 +19,7 @@ export class SearchPage {
   public items: any = [];
   private per_page: number= 5;
   private page: number=1;
-  private showMore:boolean = false;
+  public showMore:boolean;
   private isLoading:boolean = false;
   searchQuery:string='';
 

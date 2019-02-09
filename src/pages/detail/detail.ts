@@ -22,6 +22,7 @@ export class DetailPage {
   public isLoading: boolean=false;
   public comments: any=[];
   public page:number = 1;
+  public infiniteScroll: any = InfiniteScroll;
   // private sort:string='1';
   public showMore: boolean = false;
   
